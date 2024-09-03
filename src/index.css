@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+
+:root {
+  --background-color: #2f3645;
+  --text-color: #f5f7f8;
+  --btn-color: #8ea7e9;
+  --hover-color: #c3acd0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Serif", serif;
+  background-image: linear-gradient(
+      rgba(47, 54, 69, 0.8),
+      rgba(47, 54, 69, 0.8)
+    ),
+    url("../public/cover.jpeg");
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+
+.main-container {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+nav {
+  position: fixed; /* Fix the position of the navigation */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--text-color);
+  box-shadow: 2px 2px 10px rgba(47, 54, 69, 0.8);
+  z-index: 1000;
+}
+
+body {
+  padding-top: 60px;
+}

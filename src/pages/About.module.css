@@ -1,0 +1,64 @@
+.aboutContainer {
+  margin: 10px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  color: #f5f7f8;
+  text-shadow: 1px 1px 10px rgba(47, 54, 69, 0.8);
+  margin-bottom: 2rem;
+}
+
+.info {
+  width: 50rem;
+  margin: 1rem;
+  padding: 2rem;
+  border: 2px solid #c3acd0;
+}
+
+.image {
+  max-width: 60%;
+  flex: 1;
+  padding: 1rem;
+}
+
+.image img {
+  width: 100%;
+  max-width: 55rem;
+  height: 16rem;
+  border-radius: 5px;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn button {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem 4rem;
+  background-image: url("../public/about.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 900;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  backdrop-filter: brightness(0.7);
+  transition: all 0.3s ease;
+}
+
+.btn button:hover {
+  background-size: 110%; /* Slightly zooms in the background image on hover */
+  backdrop-filter: brightness(
+    0.5
+  ); /* Darkens the background image more on hover */
+  transform: translateY(-5px); /* Moves the button up slightly on hover */
+}
